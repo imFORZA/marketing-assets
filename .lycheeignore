@@ -1,0 +1,7 @@
+# Synthetic / placeholder URLs used as examples in templates.
+# These are documentation scaffolding, not real endpoints.
+
+https://schemas\.imforza\.com/.*
+https://yourbusiness\.com.*
+https://yourcompany\.com.*
+https://example\.com.*

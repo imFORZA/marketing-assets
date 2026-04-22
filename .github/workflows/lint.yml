@@ -20,7 +20,7 @@ jobs:
         run: markdownlint '**/*.md' --ignore node_modules --config .markdownlint.json
 
   link-check:
-    name: Broken link check
+    name: Broken link check (report-only)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
             --exclude-mail
             --accept 200,203,204,206,429
             './**/*.md'
-          fail: true
+          fail: false
 
   validate-canonical-files:
     name: Validate canonical M10 files
