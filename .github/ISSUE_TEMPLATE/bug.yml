@@ -30,6 +30,6 @@ body:
     id: fix
     attributes:
       label: Suggested fix
-      description: If you have a proposed correction, paste it here. Optional — we will fix it even if you just describe the bug.
+      description: If you have a proposed correction, paste it here. Optional. We will fix it even if you just describe the bug.
     validations:
       required: false

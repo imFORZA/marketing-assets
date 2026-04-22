@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# validate.sh — M10 starter pack validator
+# validate.sh - M10 starter pack validator
 #
 # Run this from the repo root after you fork and start filling in your templates:
 #

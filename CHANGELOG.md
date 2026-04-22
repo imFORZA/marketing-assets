@@ -4,21 +4,22 @@ All notable changes to this repository are documented here. Format follows [Keep
 
 ## [Unreleased]
 
-## [0.2.0] — May 2026
+## [0.2.0] - 2026-04-22
 
 ### Added
 - `CHANGELOG.md` at repo root.
 - `scripts/validate.sh` smoke-test that verifies all canonical M10 files exist and flags unfilled placeholders (warn-only, since unfilled is the expected state for a fresh fork).
-- `.github/ISSUE_TEMPLATE/` — bug, enhancement, and question templates aligned with the triage workflow.
-- `.github/PULL_REQUEST_TEMPLATE.md` — checklist for contributions.
-- `.github/workflows/lint.yml` — markdownlint + broken-link check on pull requests.
+- `.github/ISSUE_TEMPLATE/` with bug, enhancement, and question templates aligned with the triage workflow.
+- `.github/PULL_REQUEST_TEMPLATE.md` with a scope and quality checklist for contributions.
+- `.github/workflows/lint.yml` running markdownlint, lychee broken-link check, and `scripts/validate.sh` on pull requests and pushes to main.
+- `.markdownlint.json` and `.lycheeignore` configs tuned to the repo's editorial style.
 
 ### Changed
 - All outbound `imforza.com` links in `README.md`, `CONTRIBUTING.md`, and `10-brand-brain/templates/email-nurture.md` now carry UTM parameters so referral traffic from forks and clones is attributable.
 - `10-brand-brain/playbooks/linkedin.md`: reworded the "winners in 2026 wrote it down in 2025" example to an evergreen framing ("winners in the AI era") so the playbook does not age.
 - `08-content/PROOF-CORPUS.md`: replaced "2025 to 2026" date range in a data citation with "two years" to keep the example evergreen.
 
-## [0.1.0] — 2026-04-22
+## [0.1.0] - 2026-04-22
 
 ### Added
 - Initial public release.
