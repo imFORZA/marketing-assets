@@ -4,7 +4,7 @@
 
 A fork-and-fill-in starter pack for operators who want their brand structured so any AI agent (Claude, ChatGPT, Gemini, OpenClaw, Hermes, Manus) can consume it and produce marketing that sounds like them, sells what they sell, and serves who they serve.
 
-Built by [imFORZA](https://www.imforza.com). MIT licensed. Companion to the pillar guide: [The 10 Marketing Assets Every Small Business Needs to Future-Proof Their Marketing in the AI Era](https://www.imforza.com/blog/marketing-assets-for-small-business/).
+Built by [imFORZA](https://www.imforza.com). MIT licensed. Companion to the pillar guide: [The 10 Marketing Assets Every Small Business Needs to Future-Proof Their Marketing in the AI Era](https://www.imforza.com/blog/marketing-assets-for-ai/).
 
 ---
 
