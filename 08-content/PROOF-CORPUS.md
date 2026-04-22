@@ -125,7 +125,7 @@ The most powerful block in this file. Map every claim you make publicly to the p
 
 - **Testimonial:** T-001, Brenda Alvarez, Northstar Home Services. "First month after launch we booked 22 new service calls from organic search."
 - **Case study:** CS-001, Northstar Home Services.
-- **Data:** Internal benchmark across 18 engagements, 2025 to 2026.
+- **Data:** Internal benchmark across 18 engagements over two years.
 
 ## Feeding this asset to an AI agent
 

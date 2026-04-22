@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question about a specific asset
+    url: https://github.com/imFORZA/marketing-assets/discussions
+    about: Have a question about how to fill in one of the 10 assets? Open a Discussion instead of an issue.
+  - name: imFORZA Marketing Asset Audit
+    url: https://www.imforza.com/contact/?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets&utm_content=audit
+    about: Want a free 30-minute audit of your current foundation against M10? Book a call.

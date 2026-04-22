@@ -161,7 +161,7 @@ One. AI tools do not produce on-brand content. They produce on-average content. 
 
 Two. If your ICP, voice, offer, and proof are not written down, every AI tool will guess. Badly.
 
-Three. The small business winners in 2026 will be the ones who wrote their foundation down in 2025.
+Three. The small business winners in the AI era are the ones who wrote their foundation down first. The tools do not matter if the inputs are empty.
 
 We wrapped a 60-day foundation audit for Northstar Home Services in March. First month live, 47 organic leads. Not 4.7. 47.
 

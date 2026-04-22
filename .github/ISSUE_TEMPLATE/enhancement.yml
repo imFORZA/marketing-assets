@@ -1,0 +1,47 @@
+name: Enhancement / template improvement
+description: A suggested improvement to an existing template. Read the scope rules first.
+title: "[enhancement] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before you open this issue, please confirm:
+
+        - The improvement fits inside the existing Core 10 (we are not adding asset 11).
+        - The improvement is generic enough to help any small business, not just yours.
+        - The improvement is tool-agnostic (markdown or JSON only, no vendor lock-in).
+
+        If you are unsure, open a Discussion first.
+  - type: input
+    id: file
+    attributes:
+      label: File or folder affected
+      description: Which template does this improve? (e.g., `01-icp/ICP.md` or `10-brand-brain/playbooks/`)
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve
+      description: Describe the gap or friction that a small business would hit using the current version.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: What should we add, change, or remove? Paste example content if helpful.
+    validations:
+      required: true
+  - type: dropdown
+    id: worked_example
+    attributes:
+      label: Would you include a worked example?
+      description: Enhancements that change structure should ship with a fictional filled-in example.
+      options:
+        - Yes, I will include one in the PR
+        - No, structure change only
+        - Not sure yet
+    validations:
+      required: true

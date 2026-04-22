@@ -35,4 +35,4 @@ Found a bug, a typo, or an unclear section? Open an issue. Be specific about the
 
 ---
 
-Maintained by [imFORZA](https://www.imforza.com). Thank you for making this better.
+Maintained by [imFORZA](https://www.imforza.com?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets). Thank you for making this better.

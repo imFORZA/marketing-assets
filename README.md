@@ -4,7 +4,7 @@
 
 A fork-and-fill-in starter pack for operators who want their brand structured so any AI agent (Claude, ChatGPT, Gemini, OpenClaw, Hermes, Manus) can consume it and produce marketing that sounds like them, sells what they sell, and serves who they serve.
 
-Built by [imFORZA](https://www.imforza.com). MIT licensed. Companion to the pillar guide: [The 10 Marketing Assets Every Small Business Needs to Future-Proof Their Marketing in the AI Era](https://www.imforza.com/blog/marketing-assets-for-ai/).
+Built by [imFORZA](https://www.imforza.com?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets). MIT licensed. Companion to the pillar guide: [The 10 Marketing Assets Every Small Business Needs to Future-Proof Their Marketing in the AI Era](https://www.imforza.com/blog/marketing-assets-for-ai/?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets).
 
 ---
 
@@ -122,9 +122,9 @@ This is a starter, not a community standard. Fork it, adapt it to your business,
 
 If you would rather not spend 60 to 120 days building this from scratch, we build the full M10 stack (and the AI marketing system on top) for small businesses.
 
-**Free Marketing Asset Audit:** [schedule a 30-minute call](https://www.imforza.com/contact/). We score your current foundation against M10 and identify your top three gaps. No sales pressure, no commitment.
+**Free Marketing Asset Audit:** [schedule a 30-minute call](https://www.imforza.com/contact/?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets&utm_content=audit). We score your current foundation against M10 and identify your top three gaps. No sales pressure, no commitment.
 
-**Build-for-you service:** [start the conversation](https://www.imforza.com/contact/).
+**Build-for-you service:** [start the conversation](https://www.imforza.com/contact/?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets&utm_content=build).
 
 ---
 
@@ -134,4 +134,4 @@ If you would rather not spend 60 to 120 days building this from scratch, we buil
 
 ## Credits
 
-Built by the [imFORZA](https://www.imforza.com) team. We build AI marketing systems for small businesses.
+Built by the [imFORZA](https://www.imforza.com?utm_source=github&utm_medium=repo&utm_campaign=marketing-assets) team. We build AI marketing systems for small businesses.

@@ -23,7 +23,7 @@ A fill-in-the-blank template for a single email inside a nurture sequence. Copy,
 | `{{PROMISE}}` | `/05-offer/OFFER.md` | "Every AI tool gets better the day after we leave" |
 | `{{PROOF_POINT}}` | `/08-content/PROOF-CORPUS.md` | "Northstar booked 22 calls in month one" |
 | `{{CTA_LABEL}}` | `/07-website/SITE-MAP.md` conversion path | "Book a 30-minute audit" |
-| `{{CTA_URL}}` | `/07-website/SITE-MAP.md` | "https://www.imforza.com/contact/" |
+| `{{CTA_URL}}` | `/07-website/SITE-MAP.md` | "https://www.imforza.com/contact/?utm_source=email&utm_medium=nurture&utm_campaign=[campaign]" |
 | `{{SENDER_NAME}}` | Person sending the email | "Vinny" |
 | `{{SENDER_TITLE}}` | Sender's role | "Founder, imFORZA" |
 
