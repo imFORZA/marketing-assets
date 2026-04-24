@@ -9,8 +9,9 @@ This is the master file. If an AI agent can only load one thing from this reposi
 - **What goes in:** An aggregated context block that every AI agent loads before it does work on behalf of the brand. It points to the other nine folders and restates their critical inputs in a compressed form.
 - **How agents read it:** Paste this file into the system prompt of a Claude Project, a ChatGPT Custom GPT, a Gemini Gem, or any agent workflow. For longer tasks, agents load the detail files directly.
 - **Update cadence:** Update immediately after any change to ICP, voice, offer, or proof.
+- **Operating principle:** Marketing Assets as Code. Every file in this repo is machine-readable, single-source-of-truth, version-controlled, and auditable. Treat this asset the same way: edit it in version control, link to detail files rather than duplicating them, and run the audits in `/AUDITS.md` on a scheduled cadence so what the agent reads stays true.
 
-Version: 1.0.0
+Version: 1.1.0
 Last updated: [YYYY-MM-DD]
 
 ---
@@ -35,7 +36,17 @@ marketing-assets/
 │   └── AI-IMAGE-PROMPTS.md
 ├── 04-design-system/
 │   ├── DESIGN.md
-│   └── theme.json
+│   ├── theme.json
+│   ├── tokens.css
+│   ├── COMPONENT-SPEC-TEMPLATE.md
+│   ├── REFERENCES.md
+│   └── specs/
+│       ├── foundations/ (color, typography, spacing, motion)
+│       ├── tokens/
+│       ├── atoms/ (button, input)
+│       ├── molecules/
+│       ├── organisms/
+│       └── patterns/
 ├── 05-offer/
 │   ├── OFFER.md
 │   ├── COMPETITORS.md

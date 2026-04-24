@@ -241,6 +241,15 @@ Decide once. If you offer dark mode, define the mirrored palette with the same t
 - Imagery: Hero photography is close-up, natural-light shots of green coffee, roast drums, and hand pours. No people in wide shots, only hands in close-up.
 - Motion: Slow fades. No parallax.
 
+## Recommended tools
+
+- [Figma](https://www.figma.com/) (free to $15/mo): the design source of truth.
+- **FigmaLint** by TJ Pitre (free Figma plugin): audits your Figma file for hardcoded values, detached instances, missing interactive states, and token-binding gaps before those problems ship to code. Run it before handing a frame to engineering, and before every release. Confirm the plugin URL on `figma.com/community` and cross-reference `/04-design-system/REFERENCES.md` for the pattern rationale.
+- [Adobe Express](https://www.adobe.com/express/) or [Canva Pro](https://www.canva.com/pro/) for team production work.
+- Midjourney, Nano Banana, or Firefly for AI image generation (prompts in `/03-visual/AI-IMAGE-PROMPTS.md`).
+- [Eagle](https://eagle.cool/) (paid, $29 one-time) or Notion for asset libraries.
+- For the code-side counterpart to FigmaLint, see `/04-design-system/tokens.css` and `/scripts/token-audit.sh`: same pattern, different surface.
+
 ## Feeding this asset to an AI agent
 
 ```text

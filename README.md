@@ -20,6 +20,23 @@ M10 is the set of 10 structured files that fix the input problem once. Build the
 
 ---
 
+## Marketing Assets as Code
+
+Before Infrastructure as Code, every server was configured by hand and no two were quite the same. Every new environment was a fresh round of guessing, and the guesses silently diverged. Then the industry made server configuration machine-readable and auditable, and the guessing stopped.
+
+The same shift is happening to marketing. Hardik Pandya calls this treating [design decisions as infrastructure](https://hvpandya.com/llm-design-systems). We apply the same frame to all 10 assets. When your ICP, voice, offers, design tokens, and editorial calendar live as structured files that every agent reads and every audit can enforce, AI stops guessing.
+
+Every asset in this repo is designed to be:
+
+1. **Machine-readable.** Plain Markdown or JSON. Parseable by any tool.
+2. **Single source of truth.** One canonical file per topic. No floating copies.
+3. **Version-controlled.** Git history shows what changed and why.
+4. **Auditable.** A script can check whether the asset is current, complete, and internally consistent. See [`AUDITS.md`](./AUDITS.md) for the pattern applied across all 10 folders.
+
+Treat every asset in this guide as code: version it, lint it, update it in one place.
+
+---
+
 ## The 10 Assets
 
 ```
@@ -27,7 +44,7 @@ marketing-assets/
 ├── 01-icp/              Who we serve (personas + voice-of-customer library)
 ├── 02-voice/            How we sound (voice, terminology, compliance)
 ├── 03-visual/           How we look (logos, color, type, imagery, AI prompts)
-├── 04-design-system/    Machine-readable tokens (DESIGN.md + theme.json)
+├── 04-design-system/    Machine-readable tokens (DESIGN.md, theme.json, tokens.css, specs/)
 ├── 05-offer/            What we sell (offers, competitors, win-loss)
 ├── 06-seo/              What we rank for (keywords, clusters, GEO/AEO)
 ├── 07-website/          Core pages architecture (IA, schema)

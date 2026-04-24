@@ -8,16 +8,81 @@ Part of M10: The Marketing Foundation 10 by imFORZA.
 - **How agents read it:** Layout agents, code-generation agents, and CMS theme builders load `DESIGN.md` plus `theme.json` to render on-brand components without reading the visual brand guide.
 - **Update cadence:** Update in lockstep with `/03-visual/VISUAL-BRAND.md`. Any change to a token must appear in both files and in `theme.json`.
 - **Related open spec:** Google Labs [open-sourced a DESIGN.md draft specification](https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-design-md/) via the Stitch design tool in April 2026. This template is compatible in spirit (machine-readable tokens, WCAG-aware, component intent spelled out). Adopt stricter Stitch-spec sections as that spec stabilizes for cross-platform portability.
+- **Companion files in this folder:**
+  - [`theme.json`](./theme.json): tokens in JSON for tools that prefer JSON.
+  - [`tokens.css`](./tokens.css): the three-layer CSS variable file your components consume.
+  - [`COMPONENT-SPEC-TEMPLATE.md`](./COMPONENT-SPEC-TEMPLATE.md): the 8-section template every component spec uses.
+  - [`specs/`](./specs/): foundations, tokens, atoms, molecules, organisms, patterns.
+  - [`REFERENCES.md`](./REFERENCES.md): AI-ready design systems worth studying.
+
+## The four things a design system needs to be AI-ready
+
+In one AI coding session, an LLM makes 200 to 300 silent visual decisions: what padding, what shade of blue, what border radius, what font weight. Each decision looks fine in isolation. Two hundred decisions later the prototype is off and you cannot say why. The next session the LLM starts over with zero memory of yesterday's choices and picks 200 new values. By session ten it looks like three products built by three teams who never spoke.
+
+A design system is AI-ready when it constrains every one of those decisions:
+
+1. **Spec files the AI reads every session.** Structured Markdown documents for foundations (color, spacing, typography, motion) and for each component. Solves the memory problem. If the spec does not exist, the AI guesses. If it exists, the AI looks it up. This repo's `specs/` folder is the implementation of this rule.
+2. **A closed token layer the AI picks from.** Instead of hundreds of hardcoded hex values and pixel measurements scattered across files, one `tokens.css` with named variables. The AI cannot fabricate a new blue because the only blue it can reference is `var(--color-brand)`.
+3. **An audit script that catches what the AI gets wrong.** A lint task that scans the codebase for hardcoded values and suggests the correct token for each violation. Runs in CI. `scripts/token-audit.sh` is the shipped reference implementation.
+4. **Drift detection for upstream design systems.** If you depend on a component library (Atlaskit, Carbon, MUI, Radix, shadcn), a sync routine flags your spec files when the upstream ships changes so your specs stay current instead of quietly going stale.
+
+Pattern credit: Hardik Pandya's teardown, [Expose your design system to LLMs](https://hvpandya.com/llm-design-systems). See [`REFERENCES.md`](./REFERENCES.md) for the four AI-ready design systems worth studying.
+
+## Three-layer token architecture
+
+The shape that makes all of this work is a token file with three layers of indirection.
+
+```css
+/* Layer 1: upstream design system tokens (raw values) */
+--ds-text: #292A2E;
+--ds-space-400: 16px;
+
+/* Layer 2: your project aliases, with the raw value as fallback */
+--color-text: var(--ds-text, #292A2E);
+--space-400:  var(--ds-space-400, 16px);
+
+/* Layer 3: components only reference aliases, never raw values */
+color:   var(--color-text);
+padding: var(--space-400);
+```
+
+The alias layer is what protects you. If the upstream library renames a token, you update one alias. Dark mode, high contrast, future themes: the chain resolves automatically. No component file ever touches a raw hex or pixel value.
+
+The full file is `tokens.css` in this folder. Adopters should copy it, replace Layer 1 values with tokens from their actual upstream design system (or keep the raw fallbacks if they have no upstream), and keep Layer 2 alias names as-is so the rest of this repo stays valid.
+
+## Spec file hierarchy
+
+Specs are organized in six tiers so the AI can find what it needs in a predictable place.
+
+```
+specs/
+├── foundations/        color, typography, spacing, motion
+├── tokens/             master map of every CSS variable and when to use it
+├── atoms/              button, input, icon, avatar, badge
+├── molecules/          tabs, dropdown, modal, form, tooltip
+├── organisms/          navigation, table, page header, content panel
+└── patterns/           layout rules, form layout, three-column, error handling
+```
+
+Every component spec follows the same 8-section template: metadata, overview, anatomy, tokens used, props, states, code example, cross-references. The consistency is the point. When an AI builds a form it reads `patterns/form-layout.md` for spacing, `molecules/form.md` for structure, `atoms/input.md` for fields, and `tokens/tokens.md` for exact values. Every choice is a lookup, not a guess.
+
+See [`specs/README.md`](./specs/README.md) for contributor guidance. This repo ships with worked examples for `foundations/{color,typography,spacing,motion}`, `tokens/tokens`, and `atoms/{button,input}`. Fork the pattern and add the specs for components your product actually ships.
 
 ## AI-agent-ready checklist
 
-- [ ] Machine-readable: tokens in predictable tables.
-- [ ] Structured: color, typography, spacing, radius, shadow, motion, breakpoint, component sections.
-- [ ] Single source of truth: paired with `/04-design-system/theme.json`.
-- [ ] Versioned: version and change log.
-- [ ] Cite-able: agents cite `/04-design-system/DESIGN.md` and `/04-design-system/theme.json` when generating components.
+- [ ] `theme.json` is valid JSON, parseable without errors.
+- [ ] `tokens.css` uses three-layer indirection (upstream tokens, project aliases, components reference aliases only).
+- [ ] `DESIGN.md` follows the Google Labs open spec (or a documented equivalent structure).
+- [ ] `specs/` directory contains foundation specs plus one file per component, each following the 8-section template.
+- [ ] A token audit script runs in CI and reports (or fails) on any hardcoded value.
+- [ ] Upstream design system dependencies are version-pinned, with a documented sync routine.
+- [ ] Files live in the code repo, not locked inside Figma.
+- [ ] Production code references the same tokens (no drift between spec and shipped).
+- [ ] Agents cite `/04-design-system/DESIGN.md`, `/04-design-system/theme.json`, and `/04-design-system/tokens.css` when generating components.
 
-Version: 1.0.0
+Your tenth AI session should produce the same visual quality as your first. If it does not, the system is leaking somewhere in one of those eight checks.
+
+Version: 1.1.0
 Last updated: [YYYY-MM-DD]
 
 ---
@@ -290,4 +355,14 @@ Cite /04-design-system/DESIGN.md in the header comment of any generated componen
 | --- | --- | --- | --- |
 | [YYYY-MM-DD] | 1.0.0 | Initial version. | [Name] |
 
-Reference paths: `/04-design-system/DESIGN.md`, `/04-design-system/theme.json`, `/03-visual/VISUAL-BRAND.md`.
+## Recommended tools
+
+- `theme.json` in the repo root of your project: de facto standard for AI coding tools (Cursor, v0, Lovable, Bolt read it automatically).
+- [`tokens.css`](./tokens.css) with three-layer indirection: authoritative source of Layer 2 aliases your components consume.
+- [Google Stitch](https://stitch.withgoogle.com/) (free, Google Labs) to generate or validate a `DESIGN.md` against the open spec.
+- **FigmaLint** (free Figma plugin by TJ Pitre) to audit the Figma source of truth for hardcoded values, detached instances, missing interactive states, and token-binding gaps before they reach code. Pairs with `scripts/token-audit.sh` on the code side.
+- Your own **token audit script**. This repo ships [`scripts/token-audit.sh`](../scripts/token-audit.sh) as a reference implementation. Wire it into CI so drift cannot merge.
+- [Style Dictionary](https://amzn.github.io/style-dictionary/) (free) if you compile tokens to multiple platforms.
+- [Storybook](https://storybook.js.org/) (free) if you maintain a component library.
+
+Reference paths: `/04-design-system/DESIGN.md`, `/04-design-system/theme.json`, `/04-design-system/tokens.css`, `/04-design-system/specs/`, `/04-design-system/REFERENCES.md`, `/03-visual/VISUAL-BRAND.md`, `/scripts/token-audit.sh`.
