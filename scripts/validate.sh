@@ -72,6 +72,13 @@ CANONICAL_FILES=(
   "09-data/TRACKING-PLAN.md"
   "09-data/TOP-PERFORMERS.md"
   "10-brand-brain/BRAND-BRAIN.md"
+  "11-marketing-plan/README.md"
+  "11-marketing-plan/ONE-PAGE-MARKETING-PLAN.md"
+  "11-marketing-plan/EXAMPLE-marlowe-voss-family-law.md"
+  "11-marketing-plan/CUSTOMER-MATH-WORKSHEET.md"
+  "11-marketing-plan/MONTHLY-REVIEW.md"
+  "11-marketing-plan/PROMPTS.md"
+  "11-marketing-plan/CHANGELOG.md"
 )
 
 PLACEHOLDER_PATTERNS=(
