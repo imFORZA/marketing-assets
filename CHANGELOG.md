@@ -4,6 +4,16 @@ All notable changes to this repository are documented here. Format follows [Keep
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-09-29
+
+### Added
+- `11-marketing-plan/`: the first companion template folder, built for the guide [How to Build a Small Business Marketing Plan From the Customers You Actually Need](https://www.imforza.com/blog/small-business-marketing-plan/?utm_source=github&utm_medium=repo&utm_campaign=small-business-marketing-plan). Seven files: `README.md`, `ONE-PAGE-MARKETING-PLAN.md` (blank plan), `EXAMPLE-marlowe-voss-family-law.md` (completed plan for a fictional firm), `CUSTOMER-MATH-WORKSHEET.md`, `MONTHLY-REVIEW.md`, `PROMPTS.md`, and a folder-level `CHANGELOG.md`. The worksheet uses the same formulas and rounding rule as the FREE Marketing Plan Builder and the One-Page Marketing Plan & Scoreboard Google Sheet.
+
+### Changed
+- `README.md`: added a "Companion templates" section after "The 10 Assets". The M10 tree and the 10-asset count are unchanged.
+- `scripts/validate.sh`: canonical file list grew from 42 to 49 files to include the seven `11-marketing-plan/` files.
+- `.lycheeignore`: temporary entries for the companion guide and Builder URLs, which return 404 until they publish. Remove them after launch.
+
 ## [0.3.0] - 2026-04-24
 
 ### Added
@@ -55,7 +65,8 @@ All notable changes to this repository are documented here. Format follows [Keep
 - Worked examples in `01-icp/examples/` and `02-voice/examples/`.
 - `README.md` (pillar), `CONTRIBUTING.md`, `LICENSE` (MIT), `.gitignore`.
 
-[Unreleased]: https://github.com/imFORZA/marketing-assets/compare/v0.3.0...HEAD
+[Unreleased]: https://github.com/imFORZA/marketing-assets/compare/v0.4.0...HEAD
+[0.4.0]: https://github.com/imFORZA/marketing-assets/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/imFORZA/marketing-assets/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/imFORZA/marketing-assets/compare/v0.1.0...v0.2.0
 [0.1.0]: https://github.com/imFORZA/marketing-assets/releases/tag/v0.1.0

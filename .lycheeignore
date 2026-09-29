@@ -5,3 +5,8 @@ https://schemas\.imforza\.com/.*
 https://yourbusiness\.com.*
 https://yourcompany\.com.*
 https://example\.com.*
+
+# Temporary: the companion guide and the Marketing Plan Builder return 404 until they publish.
+# Remove these two entries after launch.
+https://www\.imforza\.com/blog/small-business-marketing-plan/.*
+https://www\.imforza\.com/resources/marketing-plan-builder/.*

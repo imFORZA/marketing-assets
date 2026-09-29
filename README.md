@@ -55,6 +55,12 @@ marketing-assets/
 
 Each asset has four required attributes: machine-readable, structured, single-source-of-truth, versioned. If any file fails one of those tests, it is not yet an asset.
 
+## Companion templates
+
+Working tools that sit next to the 10 assets and put them to use. They are not part of the M10 framework and do not change the build order above.
+
+- [`11-marketing-plan/`](./11-marketing-plan/): a one-page marketing plan built from the customers you need, with a customer-math worksheet, a completed example, a monthly review, and AI prompts. Companion to [How to Build a Small Business Marketing Plan From the Customers You Actually Need](https://www.imforza.com/blog/small-business-marketing-plan/?utm_source=github&utm_medium=repo&utm_campaign=small-business-marketing-plan).
+
 ---
 
 ## Quick start
