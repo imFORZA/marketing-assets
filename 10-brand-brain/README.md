@@ -13,7 +13,7 @@ This folder is where the foundation meets the agent. It holds the single master 
 - `playbooks/`, Per-channel playbooks (`linkedin.md`, `email.md`, `blog.md`, `x.md`, `quora.md`).
 - `campaigns/`, Multi-touch campaign recipes (`product-launch.md`, `nurture.md`, `re-engagement.md`, `seo-sprint.md`).
 - `prompts/`, Production prompts (`system-prompt-core.md`, `blog-writer.md`, `email-writer.md`, `social-writer.md`, `ad-writer.md`).
-- `creative-context/`, Three small files that keep AI-assisted writing from sounding like everyone else's (`creator.md`, `audience.md`, `taste.md`), plus build prompts. Based on Kieran Flanagan's [Creative Context OS](https://www.kieranflanagan.io/p/the-creative-context-os-how-to-stop).
+- `creative-context/`, Three small files every company that uses AI to write should have, so its writing stops sounding like everyone else's (`creator.md`, `audience.md`, `taste.md`), plus build prompts. Based on Kieran Flanagan's [Creative Context OS](https://www.kieranflanagan.io/p/the-creative-context-os-how-to-stop).
 
 ## Build order inside this layer
 

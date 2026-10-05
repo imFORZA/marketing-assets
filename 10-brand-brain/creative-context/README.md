@@ -4,6 +4,8 @@ Part of M10: The Marketing Foundation 10 by imFORZA.
 
 The rest of the Brand Brain tells an AI agent who your brand is and what it sells. These three files tell it how your best work gets made: how you think when you write well, who is actually reading, and what "good" means to you.
 
+Every company that uses AI to write should have them. They are part of Asset 10, not an optional extra, and `scripts/validate.sh` checks that they exist.
+
 The idea comes from Kieran Flanagan's [The Creative Context OS](https://www.kieranflanagan.io/p/the-creative-context-os-how-to-stop). His argument, in short: an AI model with no context hands you the average of everything it has read. The writing comes out polished and interchangeable. A better prompt will not fix that. Context the model cannot get anywhere else will.
 
 ## The three files
@@ -37,6 +39,7 @@ Budget about an hour for each first version. They will improve every time you us
 - Every time you reject a draft, write one line in the rejection log in `taste.md`. A rejection is a taste rule you have not written down yet.
 - Every time a reader replies, comments, or asks a question that surprises you, add it to `audience.md`.
 - Re-read `creator.md` every quarter against your latest work. Styles drift.
+- If you publish as a company rather than under a person's name, build `creator.md` for whoever sets the standard for your writing, usually the founder or your lead writer.
 - If more than one person publishes under your brand, give each byline its own file (`creator-dana.md`, `creator-priya.md`) and share one `audience.md` and one `taste.md`.
 
 ## Prompts to build the first versions

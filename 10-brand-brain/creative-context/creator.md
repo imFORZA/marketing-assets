@@ -5,7 +5,7 @@ Part of M10: The Marketing Foundation 10 by imFORZA. One of the three [creative 
 ## How to use this file
 
 - **What goes in:** How one specific person thinks and writes when the work is going well. Patterns, each backed by a short quote from real work.
-- **How agents read it:** Load it with `/02-voice/VOICE.md` before any writing task under this person's name. `VOICE.md` sets the brand's tone. This file tells the agent how this person builds an argument.
+- **How agents read it:** Load it with `/02-voice/VOICE.md` before any writing task. `VOICE.md` sets the brand's tone. This file tells the agent how the person who sets your writing standard builds an argument. If you publish as a company, that person is usually the founder or lead writer.
 - **Update cadence:** Re-read it every quarter against the latest work. Update it when a new piece joins the training set.
 
 Creator: [Name, Title]
