@@ -13,13 +13,15 @@ This folder is where the foundation meets the agent. It holds the single master 
 - `playbooks/`, Per-channel playbooks (`linkedin.md`, `email.md`, `blog.md`, `x.md`, `quora.md`).
 - `campaigns/`, Multi-touch campaign recipes (`product-launch.md`, `nurture.md`, `re-engagement.md`, `seo-sprint.md`).
 - `prompts/`, Production prompts (`system-prompt-core.md`, `blog-writer.md`, `email-writer.md`, `social-writer.md`, `ad-writer.md`).
+- `creative-context/`, Three small files that keep AI-assisted writing from sounding like everyone else's (`creator.md`, `audience.md`, `taste.md`), plus build prompts. Based on Kieran Flanagan's [Creative Context OS](https://www.kieranflanagan.io/p/the-creative-context-os-how-to-stop).
 
 ## Build order inside this layer
 
 1. Write `BRAND-BRAIN.md` only after folders 01 through 09 are populated. The master prompt aggregates them.
 2. Fill in `prompts/system-prompt-core.md`. It is the anchor prompt every specialized prompt inherits.
-3. Build `templates/` next. Templates standardize format. Playbooks standardize cadence.
-4. Build `playbooks/` and `campaigns/` last.
+3. Build `creative-context/` next. It takes about three hours, and every writing prompt after it gets better.
+4. Build `templates/` next. Templates standardize format. Playbooks standardize cadence.
+5. Build `playbooks/` and `campaigns/` last.
 
 ## How this folder is loaded into an agent
 

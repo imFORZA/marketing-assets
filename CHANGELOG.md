@@ -4,6 +4,17 @@ All notable changes to this repository are documented here. Format follows [Keep
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-10-05
+
+### Added
+- `10-brand-brain/creative-context/`: three fork-and-fill files based on Kieran Flanagan's [The Creative Context OS](https://www.kieranflanagan.io/p/the-creative-context-os-how-to-stop). `creator.md` captures how one person builds an argument, from 5 to 10 pieces that feel most like them. `audience.md` captures what readers already know, are tired of hearing, and trust, starting from five real people. `taste.md` turns admired work and rejected drafts into checkable rules plus a rejection log. A folder `README.md` adds build order, refresh rules, and paste-ready prompts to build and use the files. Examples reuse Marlowe & Voss Family Law, the fictional firm from `11-marketing-plan/`.
+
+### Changed
+- `10-brand-brain/BRAND-BRAIN.md`: bumped to 1.2.0. Added the three files to the folder tree and asset path index, and to the load order for writing tasks.
+- `10-brand-brain/README.md`: lists `creative-context/` and places it third in the build order.
+- `README.md`: folder tree and quick start mention `creative-context/`. The 10-asset count is unchanged.
+- `scripts/validate.sh`: canonical file list grew from 49 to 53 files.
+
 ## [0.4.0] - 2026-09-29
 
 ### Added
