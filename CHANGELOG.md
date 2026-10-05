@@ -4,6 +4,13 @@ All notable changes to this repository are documented here. Format follows [Keep
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-10-05
+
+### Changed
+- Creative context (`creator.md`, `audience.md`, `taste.md`) is now framed as a standard part of Asset 10 that every company should have, not an option for people who publish under their own name. Updated the root `README.md` quick start and minimum viable build, `10-brand-brain/README.md`, and `10-brand-brain/creative-context/README.md`.
+- `creator.md` and the creative-context README explain how a company that publishes under its brand name picks its creator (the founder or lead writer).
+- `AUDITS.md`: the Asset 10 row now audits the creative-context files quarterly.
+
 ## [0.5.0] - 2026-10-05
 
 ### Added

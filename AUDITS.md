@@ -23,7 +23,7 @@ The pattern is the same shape across all 10 assets:
 | **07 Website** | Schema validates on every canonical URL. Rich Results Test passes. Sitemap matches `07-website/SITE-MAP.md`. 301 chain audit. | Monthly | Google Rich Results Test (manual / scheduled). |
 | **08 Content** | Evergreen URLs not updated in 12 months flagged. Duplicate topic clusters flagged. Proof corpus citations still resolve. | Quarterly | None yet. Roadmap: freshness scanner over `08-content/CONTENT-LIBRARY.md`. |
 | **09 Data** | Tracking plan events still fire. `TOP-PERFORMERS.md` reflects last 90 days. Dashboards not broken. | Monthly | None yet. Platform-specific (GA4, Looker Studio). |
-| **10 Brand Brain** | Pointers in `BRAND-BRAIN.md` resolve to files that exist. Version pins on upstream assets still current. | Every release | `scripts/validate.sh` (canonical-file presence check). |
+| **10 Brand Brain** | Pointers in `BRAND-BRAIN.md` resolve to files that exist. Version pins on upstream assets still current. Creative context: `creator.md` still matches your latest published work, `audience.md` has entries from real readers in the last 90 days, and every rejected draft since the last audit has a row in the `taste.md` rejection log. | Every release (creative context: quarterly) | `scripts/validate.sh` (canonical-file presence check). |
 
 Cadences are targets. Pick the ones you can actually run, then automate the rest.
 

@@ -70,7 +70,7 @@ Working tools that sit next to the 10 assets and put them to use. They are not p
 3. **Start by filling `01-icp/ICP.md`** with your first primary persona. Do not skip this. Every downstream file depends on knowing who you serve.
 4. **Commit after every asset** so you have a versioned history.
 5. **Set up `10-brand-brain/BRAND-BRAIN.md`** once assets 1-9 exist. It is the file you paste into Claude Projects, ChatGPT Projects, Gemini Gems, or any AI agent's system prompt.
-6. **Add [`10-brand-brain/creative-context/`](./10-brand-brain/creative-context/)** if you publish under a person's name. Three short files (`creator.md`, `audience.md`, `taste.md`) keep AI-assisted writing sounding like you instead of like everyone else.
+6. **Build [`10-brand-brain/creative-context/`](./10-brand-brain/creative-context/).** Every company that uses AI to write should have these three short files: `creator.md` (how you think and write), `audience.md` (what your reader already knows and trusts), and `taste.md` (your quality bar). They keep AI-assisted writing sounding like you instead of like everyone else.
 
 ## The minimum viable build
 
@@ -80,7 +80,7 @@ If you only build three assets, build these:
 2. `02-voice/VOICE.md` + `02-voice/TERMINOLOGY.md`
 3. `10-brand-brain/BRAND-BRAIN.md`
 
-Those three files alone will triple the quality of AI output overnight.
+Those three files alone will triple the quality of AI output overnight. Add the three [creative context](./10-brand-brain/creative-context/) files next, so the output also sounds like you.
 
 ---
 
