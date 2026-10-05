@@ -11,7 +11,7 @@ This is the master file. If an AI agent can only load one thing from this reposi
 - **Update cadence:** Update immediately after any change to ICP, voice, offer, or proof.
 - **Operating principle:** Marketing Assets as Code. Every file in this repo is machine-readable, single-source-of-truth, version-controlled, and auditable. Treat this asset the same way: edit it in version control, link to detail files rather than duplicating them, and run the audits in `/AUDITS.md` on a scheduled cadence so what the agent reads stays true.
 
-Version: 1.1.0
+Version: 1.2.0
 Last updated: [YYYY-MM-DD]
 
 ---
@@ -72,7 +72,11 @@ marketing-assets/
     ├── templates/
     ├── playbooks/
     ├── campaigns/
-    └── prompts/
+    ├── prompts/
+    └── creative-context/
+        ├── creator.md
+        ├── audience.md
+        └── taste.md
 ```
 
 ## Asset path index
@@ -105,6 +109,9 @@ marketing-assets/
 | Analytics | `/09-data/ANALYTICS.md` |
 | Tracking Plan | `/09-data/TRACKING-PLAN.md` |
 | Top Performers | `/09-data/TOP-PERFORMERS.md` |
+| Creator | `/10-brand-brain/creative-context/creator.md` |
+| Audience | `/10-brand-brain/creative-context/audience.md` |
+| Taste | `/10-brand-brain/creative-context/taste.md` |
 
 ## Load order
 
@@ -113,8 +120,9 @@ Agents should load files in this order before a task starts.
 1. `/10-brand-brain/BRAND-BRAIN.md` (this file) for orientation.
 2. `/01-icp/ICP.md`, `/01-icp/VOICE-OF-CUSTOMER.md` for audience.
 3. `/02-voice/VOICE.md`, `/02-voice/TERMINOLOGY.md` for voice.
-4. `/05-offer/OFFER.md` for what we sell.
-5. Task-specific files based on the work.
+4. For any writing task: `/10-brand-brain/creative-context/creator.md`, `audience.md`, and `taste.md` for how the work gets made and judged. Run `taste.md` again as the review checklist after the draft exists.
+5. `/05-offer/OFFER.md` for what we sell.
+6. Task-specific files based on the work.
 
 For a blog post: add `/06-seo/KEYWORDS.md`, `/06-seo/TOPIC-CLUSTERS.md`, `/06-seo/GEO-AEO.md`, `/08-content/CONTENT-LIBRARY.md`, `/08-content/PROOF-CORPUS.md`.
 

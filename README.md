@@ -50,7 +50,7 @@ marketing-assets/
 ├── 07-website/          Core pages architecture (IA, schema)
 ├── 08-content/          Content library, proof corpus, editorial calendar
 ├── 09-data/             Analytics, tracking plan, top-performers library
-└── 10-brand-brain/      The meta-asset: templates, playbooks, campaigns, prompts
+└── 10-brand-brain/      The meta-asset: templates, playbooks, campaigns, prompts, creative context
 ```
 
 Each asset has four required attributes: machine-readable, structured, single-source-of-truth, versioned. If any file fails one of those tests, it is not yet an asset.
@@ -70,6 +70,7 @@ Working tools that sit next to the 10 assets and put them to use. They are not p
 3. **Start by filling `01-icp/ICP.md`** with your first primary persona. Do not skip this. Every downstream file depends on knowing who you serve.
 4. **Commit after every asset** so you have a versioned history.
 5. **Set up `10-brand-brain/BRAND-BRAIN.md`** once assets 1-9 exist. It is the file you paste into Claude Projects, ChatGPT Projects, Gemini Gems, or any AI agent's system prompt.
+6. **Add [`10-brand-brain/creative-context/`](./10-brand-brain/creative-context/)** if you publish under a person's name. Three short files (`creator.md`, `audience.md`, `taste.md`) keep AI-assisted writing sounding like you instead of like everyone else.
 
 ## The minimum viable build
 
